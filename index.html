@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMG Tech</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Cadastrar Produtos</a>
+                </li>
+                <li>
+                    <a href="#">Ver estoque</a>
+                </li>
+                <li>
+                    <a href="#">Pesquisar Produtos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <button value="adicionar">Adicionar Produto</button>
+            <button value="remover">Remover Produto</button>
+        </div>
+        <form>
+            <h1>Adicionar Um Produto</h1>
+            <input type="text" value="nome-produto" name="nome-produto" placeholder="Nome do Produto">
+            <input type="number" name="quantidade" id="quantidade-produto" placeholder="Quantidade">
+            <select name="categorias" id="categorias">
+                <option selected disabled value="categorias">Categorias</option>
+                <option value="processador">Processador</option>
+                <option value="placa-mae">Placa Mãe</option>
+                <option value="placa-video">Placa de video</option>
+                <option value="fonte">Fonte</option>
+                <option value="memoria-ram">Memoria Ram</option>
+                <option value="armazenamento">Armazenamento</option>
+            </select>
+            <select name="marca" id="marca">
+                <option selected disabled value="">Marca</option>
+                <option value="mancer">Mancer</option>
+                <option value="gigabyte">Gigabyte</option>
+                <option value="inter">Intel</option>
+                <option value="amd">AMD</option>
+                <option value="nvidia">Nvidia</option>
+                <option value="asus">Asus</option>
+                <option value="msi">MSI</option>
+                <option value="kingston">Kingston</option>
+                <option value="wd-green">WD Green</option>
+                <option value="adata">Adata</option>
+                <option value="xfx">XFX</option>
+                <option value="asrock">ASRock</option>
+                <option value="zotac">Zotac</option>
+                <option value="galax">Galax</option>
+                <option value="sapphire">Sapphire</option>
+            </select>
+            <select name="estado" id="estado">
+                <option selected disabled value="">Estado do Produto</option>
+                <option value="estado">Novo</option>
+                <option value="estado">Usado</option>
+                <option value="estado">Recondicionado</option>
+            </select>
+            <input type="number" name="preco" value="preco" placeholder="Adicione um Valor ao Produto">
+            <div class="button-enviar">
+                <input type="submit" value="Enviar">
+                <button>Cancelar</button>
+            </div>
+        </form>
+        <form>
+            <input type="text" name="nome-produto" placeholder="Nome do Produto">
+            <div>
+                <button type="submit">Enviar</button>
+                <button>Cancelar</button>
+            </div>
+        </form>
+    </main>
+
+    
+</body>
+</html>
