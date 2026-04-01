@@ -10,24 +10,31 @@
     <header>
         <nav>
             <ul>
+                <div class="logo">
+                    <li><img src="https://images.sympla.com.br/5efaac73cffc8.jpg" alt=""></li>
+                </div>
                 <li>
-                    <a href="index.html">Cadastrar Produtos</a>
+                    <a href="index.html"><button>Cadastrar Produtos</button></a>
                 </li>
                 <li>
-                    <a href="#">Ver estoque</a>
+                    <a href="#"><button>Ver estoque</button></a>
                 </li>
                 <li>
-                    <a href="#">Pesquisar Produtos</a>
+                    <a href="#"><button>Pesquisar Produtos</button></a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
+        <div class="titulo">
+            <h1>Cadastre ou remova um produto</h1>
+        </div>
         <div class="btn-add">
             <button value="adicionar">Adicionar Produto</button>
             <button value="remover">Remover Produto</button>
         </div>
-        <form>
+        <div class="box">
+        <form class="acima">
             <h1>Adicionar Um Produto</h1>
             <input type="text" value="nome-produto" name="nome-produto" placeholder="Nome do Produto">
             <input type="number" name="quantidade" id="quantidade-produto" placeholder="Quantidade">
@@ -69,16 +76,18 @@
                 <input type="submit" value="Enviar">
                 <button>Cancelar</button>
             </div>
+         </div>    
         </form>
-        <form>
+        <div class="abaixo">
+            <h1>Remover produto</h1>
+            <form>
             <input type="text" name="nome-produto" placeholder="Nome do Produto">
-            <div>
+            <div class="button-enviar">
                 <button type="submit">Enviar</button>
                 <button>Cancelar</button>
             </div>
         </form>
+    </div>
     </main>
-
-    
 </body>
 </html>
