@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    background-color: rgb(10, 54, 54);
+}
+
+header{
+    background-color: rgba(52, 73, 85, 0.6); 
+    height: 100%;
+    width: 200px;
+    border-right: 5px solid black; 
+}
+
+button{
+    width: 100px;
+}
+
+main{
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.titulo{
+    height: 100px;
+    width: 100%;
+    align-content: center;
+    background-color: rgba(52, 73, 85, 0.6); 
+    border-bottom: 5px solid black;
+}
+
+h1{
+    display: flex;
+    justify-self: center;
+    color: white;
+}
+
+.card{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2em;
+    padding-top: 10px;
+}
+
+.box{
+    justify-self: center;
+    padding-top: 10px;
+    height: 800px;
+    width: 100%;
+    border-radius: 2em;
+    margin-top: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  justify-content: center;
+  gap: 40px;
+  padding-top: 100px;
+  column-gap: 150px;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    transition: all 0.25s ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 8px 12px pink;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav button {
+    background: #4a90e2; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 10px;
+    width: 150px;
+}
+
+nav button:hover {
+    background: #357ABD; 
+    transform: scale(1.05);
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-self: center;
+}
+
+.imagem{
+    height: 125px;
+}
+
+.produto{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 5px auto;
+    color: #01313f; 
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 5px solid black;
+}
+
+.produto h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
