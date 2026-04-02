@@ -37,7 +37,7 @@
             <button value="remover" onclick="remove()">Remover Produto</button>
         </div>
         <div class="box" id="caixa">
-            <form class="acima" id="form-add">
+            <form action="add.php" method="post" class="acima" id="form-add">
                 <h1>Adicionar Um Produto</h1>
                 <input type="text" name="nome-produto" placeholder="Nome do Produto">
                 <input type="number" name="quantidade" id="quantidade-produto" placeholder="Quantidade">
@@ -69,26 +69,26 @@
                     <option value="sapphire">Sapphire</option>
                </select>
                <select name="estado" id="estado">
-                    <option selected disabled value="">Estado do Produto</option>
-                    <option value="estado">Novo</option>
-                    <option value="estado">Usado</option>
-                    <option value="estado">Recondicionado</option>
+                    <option selected disabled value="">Estado do produto</option>
+                    <option value="Novo">Novo</option>
+                    <option value="Usado">Usado</option>
+                    <option value="Recondicionado">Recondicionado</option>
                 </select>
                 <input type="number" name="preco" placeholder="Adicione um Valor ao Produto">
                 <div class="button-enviar">
                     <input type="submit" value="Enviar">
-                    <button>Cancelar</button>
                 </div>
+                <button><a href="index.html">Cancelar</a></button>
             </form>    
         </div>    
         <div class="abaixo" id="form-remove">
             <h1>Remover produto</h1>
-            <form>
-                <input type="text" name="nome-produto" placeholder="Nome do Produto">
+            <form method="get" action="rem.php">
+                <input type="text" name="remproduto" placeholder="Nome do Produto">
                 <div class="button-enviar">
                     <button type="submit">Enviar</button>
-                    <button>Cancelar</button>
                 </div>
+                <button><a href="?remproduto">Cancelar</a></button>
             </form>
         </div>
     </main>
