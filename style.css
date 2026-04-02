@@ -1,18 +1,266 @@
-body{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 0;
+}
+
+body{
     display: flex;
     height: 100vh;
+    background-color: rgb(10, 54, 54);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
 }
 
 header{
-    background-color: blueviolet;
+    background-color: rgba(52, 73, 85, 0.6); 
+    backdrop-filter: blur(15px); 
     height: 100%;
     width: 200px;
+    border-right: 5px solid black;    
+}
+
+button{
+    width: 100px;
+}
+
+main{
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.btn-add{
+    display: flex;
+    gap: 120px; 
+    position: absolute;
+    height: 400px;
+    background-color: #a9c9ff;
+    padding: 50px;
+    border: 5px solid black;
+    border-radius: 2em;
+}
+
+.btn-add>button{
+    width: 400px;
+    height: 80px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4a90e2;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.25s ease; 
+    color: white;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding-top: 25px ;
 }
 
 
+.btn-add>button:hover{
+    background-color: #357ABD; 
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 20px rgba(53, 122, 189, 0.5);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.box form{
+    width: 100%;
+}
+
+.box input,
+.box select{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #f5f7fa; 
+    font-size: 14px;
+    color: #222222;
+}
+
+.box{
+    position: absolute;
+    width: 600px;
+    background-color: #a9c9ff; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; 
+    padding: 30px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.box h1{
+    display: flex;
+    justify-content: center;
+    color: #2c3e50; 
+}
+
+.box,
+.btn-add{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a{
+    text-decoration: none;
+}
+
+.abaixo{
+    position: absolute;
+    height: 300px;
+    padding-top: 125px;
+    background-color: #d6e4ff; 
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav button {
+    background: #4a90e2; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 10px;
+    width: 150px;
+}
+
+nav button:hover {
+    background: #357ABD; 
+    transform: scale(1.05);
+}
+
+ul{
+    list-style: none;
+}
+
+li>img{
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-self: center;
+}
+
+.button-enviar{
+    display: flex;
+    gap: 15px; 
+    width: 100%;
+    cursor: pointer;
+}
+
+.button-enviar>button{
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #4a90e2;
+    color: white;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #357ABD;
+    transform: scale(1.05);
+}
+
+.button-enviar input,
+.button-enviar button{
+    flex: 1; 
+    height: 45px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background-color: #4a90e2; 
+}
+
+.abaixo input {
+    width: 300px;        
+    height: 45px;
+    margin: 0 auto 30px; 
+    display: flex;     
+    border: none;
+    border-radius: 8px;
+    background: #f5f7fa; 
+    font-size: 14px;
+    color: #222222;
+}
+
+.abaixo{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.abaixo h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    color: #2c3e50; 
+}
+
+.box, .abaixo{
+    display: none;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.logo{
+    height: 125px;
+}
+
+.titulo {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 30px auto;
+    color: #01313f; 
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 5px solid black;
+}
+
+.titulo h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+main{
+    padding-bottom: 60px; 
+}
 
 
 
