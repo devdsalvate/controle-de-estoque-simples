@@ -69,6 +69,14 @@ h1{
   column-gap: 150px;
 }
 
+.cards p {
+    font-weight: 700;
+}
+
+.card>img{
+    width: 85%;
+}
+
 p{
     display: flex;
     justify-content: center;
