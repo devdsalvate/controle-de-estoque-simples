@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DGM Tech - Pesquisar</title>
+    <link rel="stylesheet" href="pesquisa.css">
 </head>
 <body>
     <header>
@@ -20,15 +21,18 @@
                     <a href="estoque.html"><button>Ver estoque</button></a>
                 </li>
                 <li>
-                    <a href="pesquisa.html"><button>Pesquisar Produtos</button></a>
+                    <a href="pesquisar.html"><button>Pesquisar Produtos</button></a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <label for="">Pesquisar</label>
+        <div class="titulo">
+            <h1>Pesquisar</h1>
+        </div>
+        <div class="bar">
         <datalist></datalist>
-        <input list="opcao" name="" id="">
+        <input list="opcao" name="" id="" placeholder="Pesquisar">
         
         <datalist id="opcao">
             <div>
@@ -49,7 +53,39 @@
             <div>
                 <option value="Fonte">
             </div>
-        </datalist>
+        </datalist> 
+    </div>
+        <div class="cards">
+            <div class="card">
+                <p>Processador</p>    
+                <img src="assets/img/processador.jpg" alt="">
+                <p>Quantidade: 04</p>
+            </div>
+            <div class="card">
+                <p>Placa mãe</p>    
+                <img src="assets/img/placa-mae.jpg" alt="">
+                <p>Quantidade: 03</p>
+            </div>
+            <div class="card">
+                <p>Placa de video</p>    
+                <img src="assets/img/placa-video.jpg" alt="">
+                <p>Quantidade: 06</p>
+            </div>
+            <div class="card">
+                <p>Memoria Ram</p>    
+                <img src="assets/img/memoria-ram.webp" alt="">
+                <p>Quantidade: 05</p>
+            </div>
+            <div class="card">
+                <p>Armazenamento</p>    
+                <img src="assets/img/ssd.avif" alt="">
+                <p>Quantidade: 05</p>
+            </div>
+            <div class="card">
+                <p>Fonte</p>    
+                <img src="assets/img/fonte.jpg" alt="">
+                <p>Quantidade: 05</p>
+        </div>
     </main>
     
 </body>
