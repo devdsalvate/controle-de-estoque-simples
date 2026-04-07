@@ -32,7 +32,7 @@
         </div>
         <div class="bar">
         <datalist></datalist>
-        <input list="opcao" name="" id="" placeholder="Pesquisar">
+        <input list="opcao" name="" id="pesquisa" placeholder="Pesquisar" oninput="AparecerCard()">
         
         <datalist id="opcao">
             <div>
@@ -45,10 +45,7 @@
                 <option value="Placa-de-Video">
             </div>
             <div>
-                <option value="SSD">
-            </div>
-            <div>
-                <option value="HD">
+                <option value="Armazenamento">
             </div>
             <div>
                 <option value="Fonte">
@@ -56,37 +53,38 @@
         </datalist> 
     </div>
         <div class="cards">
-            <div class="card">
+            <div class="card" id="processador">
                 <p>Processador</p>    
                 <img src="assets/img/processador.jpg" alt="">
                 <p>Quantidade: 04</p>
             </div>
-            <div class="card">
+            <div class="card" id="placa-mae">
                 <p>Placa mãe</p>    
                 <img src="assets/img/placa-mae.jpg" alt="">
                 <p>Quantidade: 03</p>
             </div>
-            <div class="card">
+            <div class="card" id="placa-video">
                 <p>Placa de video</p>    
                 <img src="assets/img/placa-video.jpg" alt="">
                 <p>Quantidade: 06</p>
             </div>
-            <div class="card">
+            <div class="card" id="memoria-ram">
                 <p>Memoria Ram</p>    
                 <img src="assets/img/memoria-ram.webp" alt="">
                 <p>Quantidade: 05</p>
             </div>
-            <div class="card">
+            <div class="card" id="armazenamento">
                 <p>Armazenamento</p>    
                 <img src="assets/img/ssd.avif" alt="">
                 <p>Quantidade: 05</p>
             </div>
-            <div class="card">
+            <div class="card" id="fonte">
                 <p>Fonte</p>    
                 <img src="assets/img/fonte.jpg" alt="">
                 <p>Quantidade: 05</p>
         </div>
     </main>
     
+    <script src="pesquisa.js"></script>
 </body>
 </html>
