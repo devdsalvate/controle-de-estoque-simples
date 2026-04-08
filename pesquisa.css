@@ -118,8 +118,8 @@ img{
 
 .card{
     display: none;
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     background-color: white;
     border: 1px solid black;
     border-radius: 2em;
@@ -141,10 +141,13 @@ img{
 
 .cards p {
     font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 5px;
 }
 
 .card>img{
     width: 85%;
+    height: 215px;
 }
 
 p{
@@ -162,8 +165,8 @@ p{
 }
 
 .bar input{
-    width: 300px;
-    height: 45px;
+    width: 500px;
+    height: 60px;
     border-radius: 25px;
     border: none;
     padding: 20px;
